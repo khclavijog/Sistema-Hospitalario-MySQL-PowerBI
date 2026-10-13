@@ -1,10 +1,10 @@
-# Sistema Hospitalario - MySQL y Power BI
+# Sistema Hospitalario - MySQL + Power BI
 
 ## Descripción
 
-Este proyecto consiste en el diseño e implementación de una base de datos para un sistema hospitalario utilizando MySQL, complementado con dashboards desarrollados en Power BI para el análisis y visualización de la información.
+Este proyecto consiste en el diseño e implementación de una base de datos relacional para un sistema hospitalario utilizando MySQL, la cual contiene 12 tablas (10 entidades + 2 tablas puente) para gestionar pacientes, citas médicas, facturación e historia clínica, complementado con un dashboard de 3 páginas en Power BI que convierte los datos en indicadores de población, operación y finanzas para el análisis y visualización de la información.
 
-El proyecto fue desarrollado con fines de aprendizaje y fortalecimiento del portafolio profesional, aplicando conceptos de modelado de bases de datos, consultas SQL y análisis de datos.
+Proyecto de portafolio · Todos los datos son sintéticos (nombres, documentos, correos y teléfonos ficticios).
 
 ## Objetivos
 
@@ -20,8 +20,6 @@ El proyecto fue desarrollado con fines de aprendizaje y fortalecimiento del port
 - SQL
 - Power BI
 - Microsoft Excel
-- Microsoft Word
-- GitHub
 
 ## Estructura del Repositorio
 
@@ -30,9 +28,26 @@ El proyecto fue desarrollado con fines de aprendizaje y fortalecimiento del port
 - **Imagenes/**: Contiene el modelo Entidad-Relación y el modelo relacional de la base de datos.
 - **PowerBI/**: Contiene el archivo del dashboard desarrollado en Power BI.
 
-## Base de datos
+## Modelo de Datos
 
-La base de datos fue diseñada mediante un modelo Entidad-Relación y posteriormente implementada en MySQL. El proyecto incluye las tablas, relaciones y restricciones necesarias para representar la información del sistema hospitalario.
+La base de datos fue diseñada como un modelo Entidad-Relación y luego implementada en MySQL con llaves primarias, llaves foráneas, restricciones UNIQUE y tipos ENUM para estados y catálogos necesarios para representar la información del sistema hospitalario.
+
+![Modelo relacional](Imagenes/modelo_relacional.png)
+
+| Tabla | Qué almacena |
+|---|---|
+| `Pacientes` | Datos personales de cada paciente |
+| `Responsables` | Acudiente de pacientes (por ejemplo, menores de edad) |
+| `Afiliaciones` | EPS, plan de beneficios, régimen y estrato |
+| `Medicos` | Personal médico y tarjeta profesional |
+| `Asistentes` | Personal asistencial y practicantes |
+| `Especialidades` | Catálogo de especialidades médicas |
+| `Consultorio` | Consultorios y piso |
+| `Cita` | Programación y estado de cada cita |
+| `Facturacion` | Valor, estado, cobertura y tipo de cada factura |
+| `Historia_Clinica` | Registro clínico generado en cada cita |
+| `Medico_Especialidad` | Puente: relación muchos a muchos entre médicos y especialidades |
+| `Asistente_Cita` | Puente: relación muchos a muchos entre asistentes y citas |
 
 Los scripts SQL se encuentran disponibles en la carpeta **Base_de_Datos/**.
 
