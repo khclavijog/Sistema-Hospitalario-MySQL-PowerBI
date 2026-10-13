@@ -92,6 +92,19 @@ ORDER BY numero_de_pacientes DESC;
 ```
 Resultado: Contributivo (18), Subsidiado (13), Especial (1).
 
+### Modo de Ejecución
+
+Requisitos: MySQL 8 (o compatible) con MySQL Workbench, y Power BI Desktop (solo Windows).
+
+1. Clona el repositorio:
+      ```bash
+   git clone https://github.com/khclavijog/Sistema-Hospitalario-MySQL-PowerBI.git
+   ```
+   
+2. En MySQL Workbench, ejecuta Base_de_Datos/Base_de_Datos_Proyecto_Hospital.sql. Crea la base proyecto_hospital, las 12 tablas y carga los datos de ejemplo.
+3. Ejecuta Base_de_Datos/Consultas_Proyecto_Hospital.sql para probar las 23 consultas.
+4. Abre el archivo .pbix de la carpeta PowerBI/ con Power BI Desktop. Si no conecta, ve a Transformar datos → Configuración de origen de datos y apunta al servidor y usuario de tu MySQL local. Power BI puede pedir instalar el conector MySQL Connector/NET.
+
 ## Power BI
 
 Se desarrolló un dashboard en Power BI para facilitar la visualización y análisis de la información registrada en la base de datos.
