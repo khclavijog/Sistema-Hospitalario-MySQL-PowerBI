@@ -32,7 +32,7 @@ Proyecto de portafolio · Todos los datos son sintéticos (nombres, documentos, 
 
 La base de datos fue diseñada como un modelo Entidad-Relación y luego implementada en MySQL con llaves primarias, llaves foráneas, restricciones UNIQUE y tipos ENUM para estados y catálogos necesarios para representar la información del sistema hospitalario.
 
-![Modelo relacional](Imagenes/modelo_relacional.png)
+![Modelo relacional](Modelo_Relacional_Proyecto_Hospital.png)
 
 | Tabla | Qué almacena |
 |---|---|
