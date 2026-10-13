@@ -158,4 +158,5 @@ La documentación detallada de cada paso está en: [`Documentacion/Proyecto_Sist
 
 Ingeniera de Sistemas
 
-Proyecto desarrollado con fines de aprendizaje y fortalecimiento del portafolio profesional.
+**Karen Haidy Clavijo García** · Ingeniera de Sistemas
+[LinkedIn](https://www.linkedin.com/in/karen-haidy-clavijo-garcia-1a53481ab/ ) · karenclavijo434@gmail.com 
