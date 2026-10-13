@@ -110,18 +110,14 @@ Requisitos: MySQL 8 (o compatible) con MySQL Workbench, y Power BI Desktop (solo
 
 ## Power BI
 
-Se desarrolló un dashboard en Power BI para facilitar la visualización y análisis de la información registrada en la base de datos.
-
-El archivo del dashboard se encuentra disponible en la carpeta **PowerBI/**.
-
-## Vista previa del dashboard
+Se desarrolló un dashboard en Power BI para facilitar la visualización y análisis de la información registrada en la base de datos. A continuación se presenta una vista previa:
 
 | Estado de los pacientes | Gestión hospitalaria | Estado financiero |
 |---|---|---|
 | ![Estado de los pacientes](Imagenes/Dashboard_Estado_de_los_Pacientes.png) | ![Gestión hospitalaria](Imagenes/Dashboard_Gestión_hospitalaria.png) | ![Estado financiero](Imagenes/Dashboard_Estado_financiero.png) |
 
 
-## Qué muestra el dashboard
+### Qué muestra el dashboard
 
 Con los datos de ejemplo cargados (32 pacientes, 33 citas):
 
