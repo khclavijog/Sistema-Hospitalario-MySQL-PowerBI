@@ -51,7 +51,46 @@ La base de datos fue diseñada como un modelo Entidad-Relación y luego implemen
 
 El modelo entidad-relación completo está en [`Imagenes/Modelo_Entidad_Relación_Proyecto_Hospitalario.png`](Imagenes/Modelo_Entidad_Relación_Proyecto_Hospitalario.png).
 
-Los scripts SQL se encuentran disponibles en la carpeta **Base_de_Datos/**.
+### Consultas SQL destacadas
+
+Se desarrollaron 23 consultas organizadas en tres áreas: operación (9), facturación (9) y pacientes (5). Los scripts SQL se encuentran disponibles en: Base_de_Datos/Consultas_Proyecto_Hospital.sql.
+
+A continuación se presentan tres ejemplos significativos del proyecto:
+
+#### ¿Qué especialidad atiende a más pacientes distintos?
+```sql
+SELECT e.nombre_especialidad, COUNT(DISTINCT c.id_paciente) AS numero_de_pacientes
+FROM cita c
+JOIN medicos m ON c.id_medico = m.id_medico
+JOIN medico_especialidad me ON m.id_medico = me.id_medico
+JOIN especialidades e ON me.id_especialidad = e.id_especialidad
+GROUP BY e.nombre_especialidad
+ORDER BY numero_de_pacientes DESC;
+```
+Une cuatro tablas, pasando por la tabla puente médico-especialidad, y cuenta pacientes únicos. Resultado: Medicina General (4), Endocrinología (3).
+
+#### ¿Cuánto dinero se recaudó por mes?
+```sql
+SET lc_time_names = 'es_ES';
+SELECT YEAR(fecha_factura) AS año,
+       MONTHNAME(fecha_factura) AS mes,
+       SUM(valor_factura) AS dinero_facturado
+FROM facturacion
+WHERE estado_factura = 'pagada'
+GROUP BY YEAR(fecha_factura), MONTH(fecha_factura), MONTHNAME(fecha_factura)
+ORDER BY YEAR(fecha_factura), MONTH(fecha_factura);
+```
+Filtra solo facturas pagadas y agrupa por mes. Alimenta el gráfico de ingresos del dashboard financiero.
+
+#### ¿Cuántos pacientes hay por régimen?
+```sql
+SELECT a.regimen, COUNT(DISTINCT p.id_paciente) AS numero_de_pacientes
+FROM pacientes p
+JOIN afiliaciones a ON p.id_afiliacion = a.id_afiliacion
+GROUP BY a.regimen
+ORDER BY numero_de_pacientes DESC;
+```
+Resultado: Contributivo (18), Subsidiado (13), Especial (1).
 
 ## Power BI
 
