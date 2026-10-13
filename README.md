@@ -18,8 +18,7 @@ Proyecto de portafolio · Todos los datos son sintéticos (nombres, documentos, 
 
 - MySQL y MySQL Workbench
 - SQL
-- Power BI
-- Microsoft Excel
+- Power BI, Power Query y DAX
 
 ## Estructura del repositorio
 
@@ -54,7 +53,7 @@ La base de datos fue diseñada como un modelo Entidad-Relación y luego implemen
 
 El modelo entidad-relación completo está en [`Imagenes/Modelo_Entidad_Relación_Proyecto_Hospitalario.png`](Imagenes/Modelo_Entidad_Relación_Proyecto_Hospitalario.png).
 
-### Consultas SQL destacadas
+## Consultas SQL destacadas
 
 Se desarrollaron 23 consultas organizadas en tres áreas: operación (9), facturación (9) y pacientes (5). Los scripts SQL se encuentran disponibles en: Base_de_Datos/Consultas_Proyecto_Hospital.sql.
 
@@ -95,14 +94,16 @@ ORDER BY numero_de_pacientes DESC;
 ```
 Resultado: Contributivo (18), Subsidiado (13), Especial (1).
 
-### Modo de Ejecución
+## Modo de Ejecución
 
 Requisitos: MySQL 8 (o compatible) con MySQL Workbench, y Power BI Desktop (solo Windows).
 
 1. Clona el repositorio:
-      ```bash
+
+   ```bash
    git clone https://github.com/khclavijog/Sistema-Hospitalario-MySQL-PowerBI.git
    ```
+
    
 2. En MySQL Workbench, ejecuta Base_de_Datos/Base_de_Datos_Proyecto_Hospital.sql. Crea la base proyecto_hospital, las 12 tablas y carga los datos de ejemplo.
 3. Ejecuta Base_de_Datos/Consultas_Proyecto_Hospital.sql para probar las 23 consultas.
@@ -154,9 +155,5 @@ La documentación detallada de cada paso está en: [`Documentacion/Proyecto_Sist
 
 ## Autora
 
-**Karen Haidy Clavijo García**
-
-Ingeniera de Sistemas
-
 **Karen Haidy Clavijo García** · Ingeniera de Sistemas
-[LinkedIn](https://www.linkedin.com/in/karen-haidy-clavijo-garcia-1a53481ab/ ) · karenclavijo434@gmail.com 
+[LinkedIn](https://www.linkedin.com/in/karen-haidy-clavijo-garcia-1a53481ab/) · karenclavijo434@gmail.com 
