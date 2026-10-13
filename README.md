@@ -118,7 +118,7 @@ El archivo del dashboard se encuentra disponible en la carpeta **PowerBI/**.
 
 | Estado de los pacientes | Gestión hospitalaria | Estado financiero |
 |---|---|---|
-| ![Estado de los pacientes](Imagenes/Dashboard_ Estado de los Pacientes.png) | ![Gestión hospitalaria](Imagenes/Dashboard_Gestión hospitalaria.png) | ![Estado financiero](Imagenes/Dashboard_ Estado financiero.png) |
+| ![Estado de los pacientes](Imágenes/Dashboard_ Estado de los Pacientes.png) | ![Gestión hospitalaria](Imagenes/Dashboard_Gestión hospitalaria.png) | ![Estado financiero](Imagenes/Dashboard_ Estado financiero.png) |
 
 ## Qué muestra el dashboard
 
