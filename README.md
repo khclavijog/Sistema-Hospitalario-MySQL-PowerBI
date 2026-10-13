@@ -103,7 +103,7 @@ Requisitos: MySQL 8 (o compatible) con MySQL Workbench, y Power BI Desktop (solo
    
 2. En MySQL Workbench, ejecuta Base_de_Datos/Base_de_Datos_Proyecto_Hospital.sql. Crea la base proyecto_hospital, las 12 tablas y carga los datos de ejemplo.
 3. Ejecuta Base_de_Datos/Consultas_Proyecto_Hospital.sql para probar las 23 consultas.
-4. Abre el archivo .pbix de la carpeta PowerBI/ con Power BI Desktop. Si no conecta, ve a Transformar datos → Configuración de origen de datos y apunta al servidor y usuario de tu MySQL local. Power BI puede pedir instalar el conector MySQL Connector/NET.
+4. Abre el archivo .pbix de la carpeta PowerBI/Dashboard_Proyecto_Hospital.pbix con Power BI Desktop. Si no conecta, ve a Transformar datos → Configuración de origen de datos y apunta al servidor y usuario de tu MySQL local. Power BI puede pedir instalar el conector MySQL Connector/NET.
 
 ## Power BI
 
