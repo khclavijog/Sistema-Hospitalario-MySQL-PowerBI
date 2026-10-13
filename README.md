@@ -122,9 +122,15 @@ Los modelos se encuentran disponibles en la carpeta **Imagenes/**.
 
 ## Documentación
 
-La documentación presenta el desarrollo del proyecto, incluyendo el diseño de la base de datos, el modelo Entidad-Relación, el modelo relacional, la implementación en MySQL, las consultas SQL y el análisis realizado mediante Power BI.
+Se presenta el desarrollo del proyecto en el que se incluyen los siguientes apartados:
 
-El documento completo se encuentra disponible en la carpeta **Documentacion/**.
+1. **Modelado:** Diagrama entidad-relación y paso al modelo relacional.
+2. **Implementación:** Creación de la base de datos en MySQL con integridad referencial y datos de prueba.
+3. **Análisis con SQL:** Presentación de las 23 consultas para responder preguntas operativas, financieras y demográficas.
+4. **ETL y modelado en Power BI:** Conexión directa a MySQL, transformación con Power Query y medidas DAX para los indicadores.
+5. **Visualización:** Dashboard interactivo de tres páginas.
+
+La documentación detallada de cada paso está en: [`Documentacion/Proyecto_Sistema_Hospitalario.pdf`](Documentacion/Proyecto_Sistema_Hospitalario.pdf).
 
 ## Autora
 
