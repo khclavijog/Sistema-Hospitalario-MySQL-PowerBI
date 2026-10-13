@@ -114,6 +114,29 @@ Se desarrolló un dashboard en Power BI para facilitar la visualización y anál
 
 El archivo del dashboard se encuentra disponible en la carpeta **PowerBI/**.
 
+## Vista previa del dashboard
+
+| Estado de los pacientes | Gestión hospitalaria | Estado financiero |
+|---|---|---|
+| ![Estado de los pacientes](Imagenes/Dashboard_ Estado de los Pacientes.png) | ![Gestión hospitalaria](Imagenes/Dashboard_Gestión hospitalaria.png) | ![Estado financiero](Imagenes/Dashboard_ Estado financiero.png) |
+
+## Qué muestra el dashboard
+
+Con los datos de ejemplo cargados (32 pacientes, 33 citas):
+
+**Pacientes**
+- 32 pacientes: 18 en régimen contributivo (56 %), 13 en subsidiado (41 %) y 1 en especial (3 %).
+- Las EPS con más pacientes son Salud Total (6) y, empatadas, Capital Salud, Compensar, Famisanar, Nueva EPS y Sanitas (5 cada una).
+
+**Gestión hospitalaria**
+- 16 de 33 citas fueron atendidas (48 %); 12 (36 %) se perdieron por cancelación o inasistencia.
+- Medicina General es la especialidad con más pacientes (4), seguida de Endocrinología (3).
+
+**Finanzas**
+- Total recaudado de aproximadamente $2,0 millones con un promedio de $125 mil por factura pagada; la cartera pendiente es el 9 % del total.
+- La EPS aporta la mayor parte de los ingresos ($1,11 mill.), seguida de SOAT ($0,50 mill.) y ARL ($0,40 mill.).
+- Los ingresos recaudados bajan mes a mes entre enero ($840 mil) y abril ($255 mil).
+
 ## Modelado de la base de datos
 
 El proyecto incluye el modelo Entidad-Relación y el modelo relacional, utilizados como base para el diseño y la implementación de la base de datos.
