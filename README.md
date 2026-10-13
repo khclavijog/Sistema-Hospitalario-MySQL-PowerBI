@@ -49,6 +49,8 @@ La base de datos fue diseñada como un modelo Entidad-Relación y luego implemen
 | `Medico_Especialidad` | Puente: relación muchos a muchos entre médicos y especialidades |
 | `Asistente_Cita` | Puente: relación muchos a muchos entre asistentes y citas |
 
+El modelo entidad-relación completo está en [`Imagenes/Modelo_Entidad_Relación_Proyecto_Hospitalario.png`](Imagenes/Modelo_Entidad_Relación_Proyecto_Hospitalario.png).
+
 Los scripts SQL se encuentran disponibles en la carpeta **Base_de_Datos/**.
 
 ## Power BI
